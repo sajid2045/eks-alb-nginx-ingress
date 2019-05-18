@@ -1,5 +1,5 @@
-# default-environment-charts
-The default git repository used when creating new GitOps based Environments
+Implementation details : 
+[`https://medium.com/@sajid2045/aws-eks-ingress-option-alb-nginx-fc64a4a5ea9f`](url)
 
 
 
