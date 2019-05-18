@@ -1,0 +1,24 @@
+{{- if .Values.nginxIngressAlbBinding.enabled -}}
+{{- $fullName := include "alb-nginx-ingress.fullname" . -}}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $fullName }}
+  labels:
+    app.kubernetes.io/name: {{ include "alb-nginx-ingress.name" . }}
+    helm.sh/chart: {{ include "alb-nginx-ingress.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  {{- with .Values.nginxIngressAlbBinding.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  rules:
+  - host: '{{ .Values.nginxIngressAlbBinding.host }}'
+    http:
+      paths:
+      - backend:
+          serviceName: {{ .Release.Name }}-nginx-controller
+          servicePort: http
+{{- end }}

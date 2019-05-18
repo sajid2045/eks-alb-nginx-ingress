@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: nginx-echoheaders
+  namespace: default
+spec:
+  rules:
+    - host: echo.kubeflow.platform-martian-data-lake-dev.com.au
+      http:
+        paths:
+          - backend:
+              serviceName: echoheaders-x
+              servicePort: 80
+            path: /
+
+

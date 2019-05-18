@@ -1,0 +1,15 @@
+dependencies:
+- name: aws-alb-ingress-controller
+  version: 0.1.7
+  repository: http://storage.googleapis.com/kubernetes-charts-incubator
+  alias: alb
+- name: external-dns
+  version: 1.7.5
+  repository: http://storage.googleapis.com/kubernetes-charts
+  alias: externaldns
+- name: nginx-ingress  
+  version: 1.6.3
+  repository: http://storage.googleapis.com/kubernetes-charts 
+  alias: nginx
+
+    

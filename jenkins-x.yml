@@ -1,0 +1,9 @@
+env:
+- name: DEPLOY_NAMESPACE
+  value: prod
+pipelineConfig:
+  agent: {}
+  env:
+  - name: DEPLOY_NAMESPACE
+    value: prod
+  pipelines: {}

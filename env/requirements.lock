@@ -1,0 +1,12 @@
+dependencies:
+- name: aws-alb-ingress-controller
+  repository: http://storage.googleapis.com/kubernetes-charts-incubator
+  version: 0.1.7
+- name: external-dns
+  repository: http://storage.googleapis.com/kubernetes-charts
+  version: 1.7.5
+- name: nginx-ingress
+  repository: http://storage.googleapis.com/kubernetes-charts
+  version: 1.6.3
+digest: sha256:b322534fcf5410010a749c1af6b5c52046c8c78dd9da30ef64a474a9d3518e17
+generated: 2019-05-17T22:32:26.579358123Z
