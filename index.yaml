@@ -1,0 +1,79 @@
+apiVersion: v1
+entries:
+  aws-alb-ingress-controller:
+  - apiVersion: v1
+    appVersion: v1.1.2
+    created: 2019-06-10T16:39:36.565098+10:00
+    description: A Helm chart for AWS ALB Ingress Controller
+    digest: d4af560bed32e02d1ac18a6a4f1622e148ad414580fef3f9449f570ea3d01f2d
+    engine: gotpl
+    home: https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+    keywords:
+    - aws
+    - ingress
+    maintainers:
+    - email: kraig.amador@ticketmaster.com
+      name: bigkraig
+    - email: yyyng@amazon.com
+      name: M00nF1sh
+    name: aws-alb-ingress-controller
+    sources:
+    - https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+    urls:
+    - charts/aws-alb-ingress-controller-0.1.7.tgz
+    version: 0.1.7
+  eks-alb-nginx-ingress:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-06-10T16:39:36.564498+10:00
+    description: A Helm chart for Kubernetes
+    digest: 082e4bd34086cd90b799138851844f03d28bd507a37342d9283f301f2fc1f8ae
+    name: eks-alb-nginx-ingress
+    urls:
+    - eks-alb-nginx-ingress-0.0.1.tgz
+    version: 0.0.1
+  external-dns:
+  - apiVersion: v1
+    appVersion: 0.5.13
+    created: 2019-06-10T16:39:36.565824+10:00
+    description: |
+      Configure external DNS servers (AWS Route53, Google CloudDNS and others)
+      for Kubernetes Ingresses and Services
+    digest: e4edc5e7e62b39c33f1939cac2560dacd87cecfac6128b3c010f9ffe2afd5f9d
+    engine: gotpl
+    home: https://github.com/kubernetes-incubator/external-dns
+    maintainers:
+    - email: rabadin@cisco.com
+      name: rabadin
+    name: external-dns
+    sources:
+    - https://github.com/kubernetes-incubator/external-dns
+    urls:
+    - charts/external-dns-1.7.5.tgz
+    version: 1.7.5
+  nginx-ingress:
+  - apiVersion: v1
+    appVersion: 0.24.1
+    created: 2019-06-10T16:39:36.566748+10:00
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: 318700ed19da4d5266fb65c2d094511761a6e55bdb6fc0f9b64a2e712ce6e101
+    engine: gotpl
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    maintainers:
+    - email: jack.zampolin@gmail.com
+      name: jackzampolin
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    - name: ChiefAlexander
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - charts/nginx-ingress-1.6.3.tgz
+    version: 1.6.3
+generated: 2019-06-10T16:39:36.561453+10:00
